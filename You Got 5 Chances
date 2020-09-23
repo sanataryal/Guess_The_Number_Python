@@ -1,0 +1,23 @@
+import random
+n = random.randint(1, 40)
+
+Count = 0
+while n != "guess":
+
+    if Count == 5:
+
+        print ("You Lost The Game")
+        break
+    guess = int(input("Enter an integer from 1 to 40: "))
+    if guess < n:
+        print ("guess is low")
+
+    elif guess > n:
+        print ("guess is high")
+
+    else:
+        print ("you guessed it!")
+
+        break
+    Count += 1
+

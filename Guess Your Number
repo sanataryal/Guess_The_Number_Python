@@ -1,0 +1,17 @@
+import random
+Winning_Number = random.randint(1, 40)
+Guess = 1
+Player = input("Hello, Please Enter Your First Name: ")
+while True:
+    Guessed_Number = int(input("Guess a Number between 1 to 40: "))
+    if Guessed_Number == Winning_Number:
+        print(f'{Player}, You Won! in {Guess} guesses, Congratulations.')
+        break
+    else:
+        if Guessed_Number > Winning_Number:
+            print("Your guess is too high, Keep trying.")
+
+        else:
+            print("Your guess is too low, Keep trying.")
+        Guess += 1
+        continue
